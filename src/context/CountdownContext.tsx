@@ -20,7 +20,7 @@ function CountdownProvider({children} : ICountdownProviderProps){
 
     const {startNewChallenge} = useContext(ChallengesContext)
     
-    const [time, setTime] = useState(.1 * 60)
+    const [time, setTime] = useState(25 * 60)
     const [isActive, setIsActive] = useState(false)
     const [hasFinished, setHasFinished] = useState(false)
     
@@ -32,7 +32,7 @@ function CountdownProvider({children} : ICountdownProviderProps){
 
     useEffect(() => {
         if (isActive && time > 0) {
-            const countdownTimout = setTimeout(() => {
+             countdownTimeout = setTimeout(() => {
                 setTime(time - 1);
             }, 1000)
         } else if (time === 0 && isActive) {
@@ -49,8 +49,8 @@ function CountdownProvider({children} : ICountdownProviderProps){
     const resetCountDown = () => {
         clearTimeout(countdownTimeout)
         setIsActive(false);
-        setHasFinished(false);
         setTime(.1 * 60);
+        setHasFinished(false);
     }
 
     return(
