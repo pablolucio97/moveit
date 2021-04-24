@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="move.it" title="move.it" src="https://i.ibb.co/qJrng0s/e2a05600-78e3-11eb-9e7d-12ce1debd250.png" />
+  <img alt="move.it" title="move.it" src="https://i.ibb.co/Mfvwd9m/e2a05600-78e3-11eb-9e7d-12ce1debd250-1.png" />
 </h1>
 
 <p align="center">
